@@ -7,25 +7,19 @@ This is a **group assignment**.
 
 The final deliverables include a 4-page IEEE-format report, code implementation and a detailed GitHub readme file.
 
-The final project is due Wednesday, April 26 @ 11:59 PM. Find the complete [rubric](https://ufl.instructure.com/courses/469791/assignments/5497341) in the Canvas assignment.
-
 ## Training Data
 
 The training data set is the same for every team in this course.
 
-You can download the training data from the Canvas page:
-
-* ["data_train.npy"](https://ufl.instructure.com/files/76267874/download?download_frd=1)
-* ["labels_train.npy"](https://ufl.instructure.com/files/76267876/download?download_frd=1)
 
 
 ## Getting Started
 
 ### Dependencies
 
-1. Create a new conda environment `ml_experts` with the following dependencies.
+1. Create a new conda environment `regularizers` with the following dependencies.
 
-`conda create -n ml_experts python=3.7 torchvision cudatoolkit=11.3 pytorch=1.12.1=gpu_cuda* -c pytorch`
+`conda create -n regularizers python=3.7 torchvision cudatoolkit=11.3 pytorch=1.12.1=gpu_cuda* -c pytorch`
 
 `conda install -c conda-forge matplotlib`
 
@@ -39,11 +33,10 @@ You can download the training data from the Canvas page:
 
 1. Clone the repo.
 
-`git clone https://github.com/UF-FundMachineLearning-Sp23/final-project-ml-experts.git`
 
 2. Setup and activate environment
 
-`conda activate ml_experts`
+`conda activate regularizers`
 
 ## Usage
 
@@ -74,7 +67,3 @@ How it works:
 1. The `test.py` creates images from `data_test.npy` and saves them in `dataset/test/` folder. Next it generates `pred_list` that contains predicted labels. It also prints a classification report.
 2. If you trained and saved a model with different name then use: `python test.py --path <path to your model>`
 
-## Authors
-1. Imran Nasrullah [email](nasrullah.i@ufl.edu)
-2. Nicholai Platonoff [email](nplatonoff@ufl.edu)
-3. Adnan Abdullah [email](adnanabdullah@ufl.edu)
